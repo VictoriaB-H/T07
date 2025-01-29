@@ -3,27 +3,258 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Porduktliste</title>
+    <title>Produktliste</title>
     <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mvo3ooo.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <!-- <a href="index.html">
-                  <img class="logo" src="img/logo.gif" alt="logo" />
-                </a> -->
-        <input type="checkbox" id="burger-toggle" />
-        <label for="burger-toggle" class="burger-menu"> ☰ </label>
-        <div>
-          <ul>
-            <li><a href="index.html">FORSIDE</a></li>
-            <li><a href="produkt.html">Produkt</a></li>
-            <li><a href="produktliste.html">Produktliste</a></li>
-          </ul>
-        </div>
+    <header class="header">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <nav class="nav-links">
+        <a href="produktliste.html">ACCESSORIES</a>
+        <a href="produktliste.html">APPAREL</a>
+        <a href="produktliste.html">SKO</a>
+        <a href="produktliste.html">CARE</a>
+        <a href="produktliste.html">SPORT</a>
+        <a href="produktliste.html">SALE</a>
+      </nav>
+      <a href="index.html">
+        <div class="logo">FASHIONRUS</div>
+      </a>
+      <nav class="right-links">
+        <a href="#">KURV</a>
       </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <h2>SPORT</h2>
+      <section class="products">
+        <article>
+          <a href="produkt.html">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp"
+              alt="Black Fleece Jacket"
+            />
+          </a>
+          <a class="link" href="produkt.html">
+            <h3>Black Fleece Jacket</h3>
+          </a>
+          <p>Puma</p>
+          <p>Størrelser: S, M, L</p>
+          <p>
+            <span class="old-price">3999 KR</span>
+            <span class="discount-price">3950 KR</span>
+          </p>
+        </article>
+
+        <article>
+          <a href="produkt.html">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+              alt="Sahara Team India Fanwear"
+            />
+          </a>
+          <a class="link" href="produkt.html">
+            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+          </a>
+          <p>Nike</p>
+          <p>Størrelser: S, M, L</p>
+          <p>895 KR</p>
+        </article>
+
+        <article class="sold-out">
+          <a href="produkt.html">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp"
+              alt="Sahara Team India Fanwear"
+            />
+          </a>
+          <div class="sold-out-overlay">
+            <span class="sold-out-text">UDSOLGT</span>
+          </div>
+          <a class="link" href="produkt.html">
+            <h3>Blue T20 Indian Cricket Jersey</h3>
+          </a>
+          <p>Nike</p>
+          <p>Størrelser: S, M, L</p>
+          <p>
+            <span class="old-price">1595 KR</span>
+            <span class="discount-price">1567 KR</span>
+          </p>
+        </article>
+
+        <article>
+          <a href="produkt.html">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp"
+              alt="Sahara Team India Fanwear"
+            />
+          </a>
+          <a class="link" href="produkt.html">
+            <h3>Black Fleece Jacket</h3>
+          </a>
+          <p>Puma</p>
+          <p>Størrelser: S, M, L</p>
+          <p>
+            <span class="old-price">3999 KR</span>
+            <span class="discount-price">3950 KR</span>
+          </p>
+        </article>
+      </section>
+      <section class="products">
+        <article>
+          <a href="produkt.html">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp"
+              alt="Black Fleece Jacket"
+            />
+          </a>
+          <a class="link" href="produkt.html">
+            <h3>Black Fleece Jacket</h3>
+          </a>
+          <p>Puma</p>
+          <p>Størrelser: S, M, L</p>
+          <p>
+            <span class="old-price">3999 KR</span>
+            <span class="discount-price">3950 KR</span>
+          </p>
+        </article>
+
+        <article>
+          <a href="produkt.html">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+              alt="Sahara Team India Fanwear"
+            />
+          </a>
+          <a class="link" href="produkt.html">
+            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+          </a>
+          <p>Nike</p>
+          <p>Størrelser: S, M, L</p>
+          <p>895 KR</p>
+        </article>
+
+        <article>
+          <a href="produkt.html">
+            <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp""
+            alt="Sahara Team India Fanwear" />
+          </a>
+          <a class="link" href="produkt.html">
+            <h3>Blue T20 Indian Cricket Jersey</h3>
+          </a>
+          <p>Nike</p>
+          <p>Størrelser: S, M, L</p>
+          <p>
+            <span class="old-price">1595 KR</span>
+            <span class="discount-price">1567 KR</span>
+          </p>
+        </article>
+
+        <article>
+          <a href="produkt.html">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp"
+              alt="Sahara Team India Fanwear"
+            />
+          </a>
+          <a class="link" href="produkt.html">
+            <h3>Black Fleece Jacket</h3>
+          </a>
+          <p>Puma</p>
+          <p>Størrelser: S, M, L</p>
+          <p>
+            <span class="old-price">3999 KR</span>
+            <span class="discount-price">3950 KR</span>
+          </p>
+        </article>
+      </section>
+      <section class="products">
+        <article>
+          <a href="produkt.html">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp"
+              alt="Black Fleece Jacket"
+            />
+          </a>
+          <a class="link" href="produkt.html">
+            <h3>Black Fleece Jacket</h3>
+          </a>
+          <p>Puma</p>
+          <p>Størrelser: S, M, L</p>
+          <p>
+            <span class="old-price">3999 KR</span>
+            <span class="discount-price">3950 KR</span>
+          </p>
+        </article>
+
+        <article>
+          <a href="produkt.html">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp"
+              alt="Sahara Team India Fanwear"
+            />
+          </a>
+          <a class="link" href="produkt.html">
+            <h3>Sahara Team India Fanwear Round Neck Jersey</h3>
+          </a>
+          <p>Nike</p>
+          <p>Størrelser: S, M, L</p>
+          <p>895 KR</p>
+        </article>
+
+        <article>
+          <a href="produkt.html">
+            <img src="https://kea-alt-del.dk/t7/images/webp/640/1164.webp""
+            alt="Sahara Team India Fanwear" />
+          </a>
+          <a class="link" href="produkt.html">
+            <h3>Blue T20 Indian Cricket Jersey</h3>
+          </a>
+          <p>Nike</p>
+          <p>Størrelser: S, M, L</p>
+          <p>
+            <span class="old-price">1595 KR</span>
+            <span class="discount-price">1567 KR</span>
+          </p>
+        </article>
+
+        <article>
+          <a href="produkt.html">
+            <img
+              src="https://kea-alt-del.dk/t7/images/webp/640/1528.webp"
+              alt="Sahara Team India Fanwear"
+            />
+          </a>
+          <a class="link" href="produkt.html">
+            <h3>Black Fleece Jacket</h3>
+          </a>
+          <p>Puma</p>
+          <p>Størrelser: S, M, L</p>
+          <p>
+            <span class="old-price">3999 KR</span>
+            <span class="discount-price">3950 KR</span>
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p>CONTACT@FASHIONRUS.COM</p>
+
+          <button class="newsletter-btn">NYHEDSBREV</button>
+        </div>
+        <div class="footer-right">
+          <p>INSTAGRAM | FACEBOOK | KONTAKT</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("nav-active");
+      }
+    </script>
   </body>
 </html>

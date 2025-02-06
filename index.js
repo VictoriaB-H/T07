@@ -9,11 +9,22 @@ function showList(categories) {
   const markup = categories
     .map(
       (category) => `
-        
-          
-            <a href="produktliste.html?category=${category.category}" class="category-link">${category.category}</a>`
+        <a href="produktliste.html?category=${category.category}" class="category-link">${category.category}</a>`
     )
     .join("");
   console.log("min markup er", markup);
   categoriesContainer.innerHTML = markup;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const category = link.textContent.trim().toLowerCase();
+      window.location.href = `produktliste.html?category=${category}`;
+    });
+  });
+});
